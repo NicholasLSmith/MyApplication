@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.paltechnologies.mylibrary.TempTest;
 import com.paltechnologies.pal8.Scanner.Scanner;
 
 import java.util.Observable;
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity
         m_scanner = new Scanner(this);
         m_scanner.addObserver(this);
         m_scanner.scan();
+
+        TempTest test = new TempTest();
+        int bob = test.getNumber();
+        Log.w(TAG, "onCreate: " + test.getNumber());
     }
 
     @Override

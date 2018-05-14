@@ -6,4 +6,8 @@ public class TempTest {
     public int getNumber() {
         return 1543;
     }
+
+    public String getString() {
+        return "Hello - Nicholas";
+    }
 }
